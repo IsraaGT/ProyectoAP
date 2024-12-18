@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido a la Página de Fórmula 1</title>
+    <!-- Enlace a la CDN de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEJhoViX5JKAEfJxoB44kckevJl9ddNqaHRuZzx9xZ5B7yNB6jm/JSqwVsG5p" crossorigin="anonymous">
+
+    <!-- Fuente de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* Fuente y diseño del fondo */
+        body {
+            background-color: #e9ecef;
+            font-family: 'Poppins', sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+        }
+
+            .container h1 {
+                font-size: 2.5rem;
+                margin-bottom: 20px;
+            }
+
+            .container p {
+                font-size: 1.2rem;
+                margin-bottom: 30px;
+                color: #555;
+            }
+
+        .btn-container a {
+            font-size: 1.2rem;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+            display: inline-block;
+            width: 200px;
+            margin: 10px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+            /* Efectos para los botones */
+            .btn-primary:hover {
+                background-color: #0056b3;
+                border-color: #004085;
+                transform: translateY(-5px);
+            }
+
+            /* Sombra para los botones */
+            .btn-primary:active {
+                transform: translateY(0);
+                box-shadow: none;
+            }
+
+        /* Efectos de sombra para el contenedor */
+        .container {
+            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="mb-4">Bienvenido a la Página de Fórmula 1</h1>
+        <p class="lead">Dirígete a la sección que te gustaría ver:</p>
+
+        <div class="btn-container">
+            <a href="carreras.html" class="btn btn-primary btn-lg">Carreras</a>
+            <a href="equipos.html" class="btn btn-primary btn-lg">Equipos</a>
+            <a href="pilotos.html" class="btn btn-primary btn-lg">Pilotos</a>
+            <a href="resultados.html" class="btn btn-primary btn-lg">Resultados</a>
+        </div>
+    </div>
+
+    <!-- Scripts de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybCkFpLv3rFft4mjzFJCpNAf1p/wvYOhzKh9Cg5uDItfMgkJg" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0p5bXAr+dCz7/wKtAp9Bfh2m9V7TBiDIWe5xuWTz7zWeyneI" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            font-size: 14px;
+            color: #555;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background-color: #218838;
+            }
+
+        .error, .success {
+            margin-top: 10px;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .error {
+            color: #dc3545;
+        }
+
+        .success {
+            color: #28a745;
+        }
+
+        .register-link {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+            .register-link a {
+                color: #007bff;
+                text-decoration: none;
+                font-size: 14px;
+            }
+
+                .register-link a:hover {
+                    text-decoration: underline;
+                }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo" placeholder="Ingresa tu correo" required>
+
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" id="contraseña" name="contraseña" placeholder="Ingresa tu contraseña" required>
+
+            <button type="button" id="btnLogin">Iniciar Sesión</button>
+            <div class="error" id="errorMsg"></div>
+            <div class="success" id="successMsg"></div>
+        </form>
+
+        <!-- Enlace para redirigir al registro -->
+        <div class="register-link">
+            <p>¿No tienes cuenta? <a href="register.html">Regístrate aquí</a></p>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("#btnLogin").click(function () {
+                // Limpiar mensajes previos
+                $("#errorMsg").text('');
+                $("#successMsg").text('');
+
+                // Obtener los datos del formulario
+                const correo = $("#correo").val().trim();
+                const contraseña = $("#contraseña").val().trim();
+
+                // Validaciones básicas
+                if (!correo || !contraseña) {
+                    $("#errorMsg").text("Ambos campos son obligatorios.");
+                    return;
+                }
+
+                // Construir el objeto de datos
+                const loginData = {
+                    Correo: correo,
+                    Contraseña: contraseña
+                };
+
+                // Enviar los datos al backend usando AJAX
+                $.ajax({
+                    url: "https://localhost:7014/api/usuarios/login/", // Cambia a la ruta de tu API real
+                    type: "POST",
+                    contentType: "application/json",
+                    data: JSON.stringify(loginData),
+                    success: function (response) {
+                        $("#successMsg").text("¡Inicio de sesión exitoso!");
+                        // Aquí puedes redirigir al usuario a otra página después del login
+                        window.location.href = "/home.html"; // Por ejemplo, redirigir a home
+                    },
+                    error: function (xhr, status, error) {
+                        let errorText = "Ocurrió un error al iniciar sesión.";
+                        if (xhr.responseJSON && xhr.responseJSON.errors) {
+                            errorText = Object.values(xhr.responseJSON.errors).join(" ");
+                        }
+                        $("#errorMsg").text(errorText);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

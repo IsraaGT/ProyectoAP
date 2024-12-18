@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados de Carreras</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .volver-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+
+<body class="container py-4">
+    <h1 class="text-center mb-4">Resultados de Carreras</h1>
+
+    <!-- Tabla para mostrar los resultados de las carreras -->
+    <table id="resultadosCarrerasTable" class="table table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>ID Resultado</th>
+                <th>Nombre Carrera</th>
+                <th>Nombre Piloto</th>
+                <th>Posición Final</th>
+                <th>Tiempo Final</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <!-- Botón de Volver -->
+    <button class="btn btn-primary volver-button" onclick="window.location.href='home.html'">Volver</button>
+
+    <script>
+        const API_RESULTADOS_URL = "https://localhost:7014/api/ResultadoCarreras"; // Cambia la URL por la de tu API de Resultados
+
+        // Función para obtener y mostrar los resultados de las carreras
+        async function fetchResultadosCarreras() {
+            try {
+                const response = await fetch(API_RESULTADOS_URL);
+                const resultados = await response.json();
+                const tbody = document.querySelector("#resultadosCarrerasTable tbody");
+                tbody.innerHTML = ""; // Limpiar la tabla
+
+                const seenIds = new Set(); // Conjunto para controlar los IDs de resultado únicos
+
+                // Recorremos todos los resultados de las carreras
+                resultados.forEach(resultado => {
+                    // Verificamos si ya hemos mostrado este `idResultado`
+                    if (seenIds.has(resultado.idresultado)) {
+                        return; // Si el id ya fue mostrado, no lo mostramos de nuevo
+                    }
+
+                    // Marcar el ID como mostrado
+                    seenIds.add(resultado.idresultado);
+
+                    const carrera = resultado.idcarreraNavigation; // Información de la carrera
+                    const piloto = resultado.idpilotoNavigation; // Información del piloto
+
+                    // Si no tiene carrera o piloto, lo podemos omitir
+                    if (!carrera || !piloto) {
+                        return; // Omite el resultado si no tiene datos válidos
+                    }
+
+                    // Creamos una fila para el resultado
+                    const row = document.createElement("tr");
+                    row.innerHTML = `
+                                    <td>${resultado.idresultado}</td>
+                                    <td>${carrera.nombreCarrera}</td>
+                                    <td>${piloto.nombrePiloto}</td>
+                                    <td>${resultado.posiciónFinal || "N/A"}</td>
+                                    <td>${resultado.tiempoFinal || "N/A"}</td>
+                                `;
+                    tbody.appendChild(row);
+                });
+            } catch (error) {
+                console.error("Error al cargar los resultados de las carreras", error);
+            }
+        }
+
+        // Llamamos la función al cargar la página
+        window.onload = fetchResultadosCarreras;
+    </script>
+
+</body>
+</html>

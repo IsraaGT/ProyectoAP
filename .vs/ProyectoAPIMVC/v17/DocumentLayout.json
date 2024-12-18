@@ -1,0 +1,395 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\israa\\Desktop\\ProyectoAPIMVC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DA95A067-09EE-4EEE-A42E-D0FE7D6F3AA0}|ProyectoAPIMVC\\ProyectoAPIMVC.csproj|c:\\users\\israa\\desktop\\proyectoapimvc\\proyectoapimvc\\wwwroot\\equipos.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA95A067-09EE-4EEE-A42E-D0FE7D6F3AA0}|ProyectoAPIMVC\\ProyectoAPIMVC.csproj|solutionrelative:proyectoapimvc\\wwwroot\\equipos.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA95A067-09EE-4EEE-A42E-D0FE7D6F3AA0}|ProyectoAPIMVC\\ProyectoAPIMVC.csproj|c:\\users\\israa\\desktop\\proyectoapimvc\\proyectoapimvc\\wwwroot\\carreras.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA95A067-09EE-4EEE-A42E-D0FE7D6F3AA0}|ProyectoAPIMVC\\ProyectoAPIMVC.csproj|solutionrelative:proyectoapimvc\\wwwroot\\carreras.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA95A067-09EE-4EEE-A42E-D0FE7D6F3AA0}|ProyectoAPIMVC\\ProyectoAPIMVC.csproj|c:\\users\\israa\\desktop\\proyectoapimvc\\proyectoapimvc\\controllers\\equiposcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA95A067-09EE-4EEE-A42E-D0FE7D6F3AA0}|ProyectoAPIMVC\\ProyectoAPIMVC.csproj|solutionrelative:proyectoapimvc\\controllers\\equiposcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA95A067-09EE-4EEE-A42E-D0FE7D6F3AA0}|ProyectoAPIMVC\\ProyectoAPIMVC.csproj|c:\\users\\israa\\desktop\\proyectoapimvc\\proyectoapimvc\\controllers\\carrerascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA95A067-09EE-4EEE-A42E-D0FE7D6F3AA0}|ProyectoAPIMVC\\ProyectoAPIMVC.csproj|solutionrelative:proyectoapimvc\\controllers\\carrerascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA95A067-09EE-4EEE-A42E-D0FE7D6F3AA0}|ProyectoAPIMVC\\ProyectoAPIMVC.csproj|c:\\users\\israa\\desktop\\proyectoapimvc\\proyectoapimvc\\models\\equipo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA95A067-09EE-4EEE-A42E-D0FE7D6F3AA0}|ProyectoAPIMVC\\ProyectoAPIMVC.csproj|solutionrelative:proyectoapimvc\\models\\equipo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA95A067-09EE-4EEE-A42E-D0FE7D6F3AA0}|ProyectoAPIMVC\\ProyectoAPIMVC.csproj|c:\\users\\israa\\desktop\\proyectoapimvc\\proyectoapimvc\\models\\carrera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA95A067-09EE-4EEE-A42E-D0FE7D6F3AA0}|ProyectoAPIMVC\\ProyectoAPIMVC.csproj|solutionrelative:proyectoapimvc\\models\\carrera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA95A067-09EE-4EEE-A42E-D0FE7D6F3AA0}|ProyectoAPIMVC\\ProyectoAPIMVC.csproj|c:\\users\\israa\\desktop\\proyectoapimvc\\proyectoapimvc\\controllers\\resultadocarrerascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA95A067-09EE-4EEE-A42E-D0FE7D6F3AA0}|ProyectoAPIMVC\\ProyectoAPIMVC.csproj|solutionrelative:proyectoapimvc\\controllers\\resultadocarrerascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA95A067-09EE-4EEE-A42E-D0FE7D6F3AA0}|ProyectoAPIMVC\\ProyectoAPIMVC.csproj|c:\\users\\israa\\desktop\\proyectoapimvc\\proyectoapimvc\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA95A067-09EE-4EEE-A42E-D0FE7D6F3AA0}|ProyectoAPIMVC\\ProyectoAPIMVC.csproj|solutionrelative:proyectoapimvc\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA95A067-09EE-4EEE-A42E-D0FE7D6F3AA0}|ProyectoAPIMVC\\ProyectoAPIMVC.csproj|c:\\users\\israa\\desktop\\proyectoapimvc\\proyectoapimvc\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA95A067-09EE-4EEE-A42E-D0FE7D6F3AA0}|ProyectoAPIMVC\\ProyectoAPIMVC.csproj|solutionrelative:proyectoapimvc\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA95A067-09EE-4EEE-A42E-D0FE7D6F3AA0}|ProyectoAPIMVC\\ProyectoAPIMVC.csproj|c:\\users\\israa\\desktop\\proyectoapimvc\\proyectoapimvc\\models\\resultadocarrera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA95A067-09EE-4EEE-A42E-D0FE7D6F3AA0}|ProyectoAPIMVC\\ProyectoAPIMVC.csproj|solutionrelative:proyectoapimvc\\models\\resultadocarrera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA95A067-09EE-4EEE-A42E-D0FE7D6F3AA0}|ProyectoAPIMVC\\ProyectoAPIMVC.csproj|c:\\users\\israa\\desktop\\proyectoapimvc\\proyectoapimvc\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA95A067-09EE-4EEE-A42E-D0FE7D6F3AA0}|ProyectoAPIMVC\\ProyectoAPIMVC.csproj|solutionrelative:proyectoapimvc\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA95A067-09EE-4EEE-A42E-D0FE7D6F3AA0}|ProyectoAPIMVC\\ProyectoAPIMVC.csproj|c:\\users\\israa\\desktop\\proyectoapimvc\\proyectoapimvc\\models\\piloto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA95A067-09EE-4EEE-A42E-D0FE7D6F3AA0}|ProyectoAPIMVC\\ProyectoAPIMVC.csproj|solutionrelative:proyectoapimvc\\models\\piloto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA95A067-09EE-4EEE-A42E-D0FE7D6F3AA0}|ProyectoAPIMVC\\ProyectoAPIMVC.csproj|c:\\users\\israa\\desktop\\proyectoapimvc\\proyectoapimvc\\models\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA95A067-09EE-4EEE-A42E-D0FE7D6F3AA0}|ProyectoAPIMVC\\ProyectoAPIMVC.csproj|solutionrelative:proyectoapimvc\\models\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA95A067-09EE-4EEE-A42E-D0FE7D6F3AA0}|ProyectoAPIMVC\\ProyectoAPIMVC.csproj|c:\\users\\israa\\desktop\\proyectoapimvc\\proyectoapimvc\\models\\proyectoapicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA95A067-09EE-4EEE-A42E-D0FE7D6F3AA0}|ProyectoAPIMVC\\ProyectoAPIMVC.csproj|solutionrelative:proyectoapimvc\\models\\proyectoapicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA95A067-09EE-4EEE-A42E-D0FE7D6F3AA0}|ProyectoAPIMVC\\ProyectoAPIMVC.csproj|c:\\users\\israa\\desktop\\proyectoapimvc\\proyectoapimvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA95A067-09EE-4EEE-A42E-D0FE7D6F3AA0}|ProyectoAPIMVC\\ProyectoAPIMVC.csproj|solutionrelative:proyectoapimvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA95A067-09EE-4EEE-A42E-D0FE7D6F3AA0}|ProyectoAPIMVC\\ProyectoAPIMVC.csproj|c:\\users\\israa\\desktop\\proyectoapimvc\\proyectoapimvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA95A067-09EE-4EEE-A42E-D0FE7D6F3AA0}|ProyectoAPIMVC\\ProyectoAPIMVC.csproj|solutionrelative:proyectoapimvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA95A067-09EE-4EEE-A42E-D0FE7D6F3AA0}|ProyectoAPIMVC\\ProyectoAPIMVC.csproj|c:\\users\\israa\\desktop\\proyectoapimvc\\proyectoapimvc\\wwwroot\\register.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA95A067-09EE-4EEE-A42E-D0FE7D6F3AA0}|ProyectoAPIMVC\\ProyectoAPIMVC.csproj|solutionrelative:proyectoapimvc\\wwwroot\\register.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA95A067-09EE-4EEE-A42E-D0FE7D6F3AA0}|ProyectoAPIMVC\\ProyectoAPIMVC.csproj|c:\\users\\israa\\desktop\\proyectoapimvc\\proyectoapimvc\\wwwroot\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA95A067-09EE-4EEE-A42E-D0FE7D6F3AA0}|ProyectoAPIMVC\\ProyectoAPIMVC.csproj|solutionrelative:proyectoapimvc\\wwwroot\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA95A067-09EE-4EEE-A42E-D0FE7D6F3AA0}|ProyectoAPIMVC\\ProyectoAPIMVC.csproj|c:\\users\\israa\\desktop\\proyectoapimvc\\proyectoapimvc\\wwwroot\\home.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA95A067-09EE-4EEE-A42E-D0FE7D6F3AA0}|ProyectoAPIMVC\\ProyectoAPIMVC.csproj|solutionrelative:proyectoapimvc\\wwwroot\\home.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA95A067-09EE-4EEE-A42E-D0FE7D6F3AA0}|ProyectoAPIMVC\\ProyectoAPIMVC.csproj|c:\\users\\israa\\desktop\\proyectoapimvc\\proyectoapimvc\\wwwroot\\resultados.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA95A067-09EE-4EEE-A42E-D0FE7D6F3AA0}|ProyectoAPIMVC\\ProyectoAPIMVC.csproj|solutionrelative:proyectoapimvc\\wwwroot\\resultados.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA95A067-09EE-4EEE-A42E-D0FE7D6F3AA0}|ProyectoAPIMVC\\ProyectoAPIMVC.csproj|c:\\users\\israa\\desktop\\proyectoapimvc\\proyectoapimvc\\wwwroot\\pilotos.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA95A067-09EE-4EEE-A42E-D0FE7D6F3AA0}|ProyectoAPIMVC\\ProyectoAPIMVC.csproj|solutionrelative:proyectoapimvc\\wwwroot\\pilotos.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA95A067-09EE-4EEE-A42E-D0FE7D6F3AA0}|ProyectoAPIMVC\\ProyectoAPIMVC.csproj|c:\\users\\israa\\desktop\\proyectoapimvc\\proyectoapimvc\\controllers\\pilotoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA95A067-09EE-4EEE-A42E-D0FE7D6F3AA0}|ProyectoAPIMVC\\ProyectoAPIMVC.csproj|solutionrelative:proyectoapimvc\\controllers\\pilotoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA95A067-09EE-4EEE-A42E-D0FE7D6F3AA0}|ProyectoAPIMVC\\ProyectoAPIMVC.csproj|c:\\users\\israa\\desktop\\proyectoapimvc\\proyectoapimvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DA95A067-09EE-4EEE-A42E-D0FE7D6F3AA0}|ProyectoAPIMVC\\ProyectoAPIMVC.csproj|solutionrelative:proyectoapimvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Equipo.cs",
+              "DocumentMoniker": "C:\\Users\\israa\\Desktop\\ProyectoAPIMVC\\ProyectoAPIMVC\\Models\\Equipo.cs",
+              "RelativeDocumentMoniker": "ProyectoAPIMVC\\Models\\Equipo.cs",
+              "ToolTip": "C:\\Users\\israa\\Desktop\\ProyectoAPIMVC\\ProyectoAPIMVC\\Models\\Equipo.cs",
+              "RelativeToolTip": "ProyectoAPIMVC\\Models\\Equipo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T17:52:59.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "C:\\Users\\israa\\Desktop\\ProyectoAPIMVC\\ProyectoAPIMVC\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "ProyectoAPIMVC\\Controllers\\UsuariosController.cs",
+              "ToolTip": "C:\\Users\\israa\\Desktop\\ProyectoAPIMVC\\ProyectoAPIMVC\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "ProyectoAPIMVC\\Controllers\\UsuariosController.cs",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAIwLMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T19:29:24.083Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CarrerasController.cs",
+              "DocumentMoniker": "C:\\Users\\israa\\Desktop\\ProyectoAPIMVC\\ProyectoAPIMVC\\Controllers\\CarrerasController.cs",
+              "RelativeDocumentMoniker": "ProyectoAPIMVC\\Controllers\\CarrerasController.cs",
+              "ToolTip": "C:\\Users\\israa\\Desktop\\ProyectoAPIMVC\\ProyectoAPIMVC\\Controllers\\CarrerasController.cs",
+              "RelativeToolTip": "ProyectoAPIMVC\\Controllers\\CarrerasController.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAIwIIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T19:45:13.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ResultadoCarrerasController.cs",
+              "DocumentMoniker": "C:\\Users\\israa\\Desktop\\ProyectoAPIMVC\\ProyectoAPIMVC\\Controllers\\ResultadoCarrerasController.cs",
+              "RelativeDocumentMoniker": "ProyectoAPIMVC\\Controllers\\ResultadoCarrerasController.cs",
+              "ToolTip": "C:\\Users\\israa\\Desktop\\ProyectoAPIMVC\\ProyectoAPIMVC\\Controllers\\ResultadoCarrerasController.cs",
+              "RelativeToolTip": "ProyectoAPIMVC\\Controllers\\ResultadoCarrerasController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACMAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T19:43:32.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "carreras.html",
+              "DocumentMoniker": "C:\\Users\\israa\\Desktop\\ProyectoAPIMVC\\ProyectoAPIMVC\\wwwroot\\carreras.html",
+              "RelativeDocumentMoniker": "ProyectoAPIMVC\\wwwroot\\carreras.html",
+              "ToolTip": "C:\\Users\\israa\\Desktop\\ProyectoAPIMVC\\ProyectoAPIMVC\\wwwroot\\carreras.html",
+              "RelativeToolTip": "ProyectoAPIMVC\\wwwroot\\carreras.html",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAQwJ8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-12-16T07:35:54.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\israa\\Desktop\\ProyectoAPIMVC\\ProyectoAPIMVC\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "ProyectoAPIMVC\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\israa\\Desktop\\ProyectoAPIMVC\\ProyectoAPIMVC\\Models\\Usuario.cs",
+              "RelativeToolTip": "ProyectoAPIMVC\\Models\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T15:06:40.282Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "equipos.html",
+              "DocumentMoniker": "C:\\Users\\israa\\Desktop\\ProyectoAPIMVC\\ProyectoAPIMVC\\wwwroot\\equipos.html",
+              "RelativeDocumentMoniker": "ProyectoAPIMVC\\wwwroot\\equipos.html",
+              "ToolTip": "C:\\Users\\israa\\Desktop\\ProyectoAPIMVC\\ProyectoAPIMVC\\wwwroot\\equipos.html",
+              "RelativeToolTip": "ProyectoAPIMVC\\wwwroot\\equipos.html",
+              "ViewState": "AgIAAJgAAAAAAAAAAAAQwLIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-12-16T06:34:23.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EquiposController.cs",
+              "DocumentMoniker": "C:\\Users\\israa\\Desktop\\ProyectoAPIMVC\\ProyectoAPIMVC\\Controllers\\EquiposController.cs",
+              "RelativeDocumentMoniker": "ProyectoAPIMVC\\Controllers\\EquiposController.cs",
+              "ToolTip": "C:\\Users\\israa\\Desktop\\ProyectoAPIMVC\\ProyectoAPIMVC\\Controllers\\EquiposController.cs",
+              "RelativeToolTip": "ProyectoAPIMVC\\Controllers\\EquiposController.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAIwHIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T19:44:47.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ResultadoCarrera.cs",
+              "DocumentMoniker": "C:\\Users\\israa\\Desktop\\ProyectoAPIMVC\\ProyectoAPIMVC\\Models\\ResultadoCarrera.cs",
+              "RelativeDocumentMoniker": "ProyectoAPIMVC\\Models\\ResultadoCarrera.cs",
+              "ToolTip": "C:\\Users\\israa\\Desktop\\ProyectoAPIMVC\\ProyectoAPIMVC\\Models\\ResultadoCarrera.cs",
+              "RelativeToolTip": "ProyectoAPIMVC\\Models\\ResultadoCarrera.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T15:06:45.043Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Carrera.cs",
+              "DocumentMoniker": "C:\\Users\\israa\\Desktop\\ProyectoAPIMVC\\ProyectoAPIMVC\\Models\\Carrera.cs",
+              "RelativeDocumentMoniker": "ProyectoAPIMVC\\Models\\Carrera.cs",
+              "ToolTip": "C:\\Users\\israa\\Desktop\\ProyectoAPIMVC\\ProyectoAPIMVC\\Models\\Carrera.cs",
+              "RelativeToolTip": "ProyectoAPIMVC\\Models\\Carrera.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T17:41:17.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Piloto.cs",
+              "DocumentMoniker": "C:\\Users\\israa\\Desktop\\ProyectoAPIMVC\\ProyectoAPIMVC\\Models\\Piloto.cs",
+              "RelativeDocumentMoniker": "ProyectoAPIMVC\\Models\\Piloto.cs",
+              "ToolTip": "C:\\Users\\israa\\Desktop\\ProyectoAPIMVC\\ProyectoAPIMVC\\Models\\Piloto.cs",
+              "RelativeToolTip": "ProyectoAPIMVC\\Models\\Piloto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T06:46:32.388Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\israa\\Desktop\\ProyectoAPIMVC\\ProyectoAPIMVC\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "ProyectoAPIMVC\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\israa\\Desktop\\ProyectoAPIMVC\\ProyectoAPIMVC\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "ProyectoAPIMVC\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T00:58:44.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "C:\\Users\\israa\\Desktop\\ProyectoAPIMVC\\ProyectoAPIMVC\\Models\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "ProyectoAPIMVC\\Models\\LoginRequest.cs",
+              "ToolTip": "C:\\Users\\israa\\Desktop\\ProyectoAPIMVC\\ProyectoAPIMVC\\Models\\LoginRequest.cs",
+              "RelativeToolTip": "ProyectoAPIMVC\\Models\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T04:37:47.601Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\israa\\Desktop\\ProyectoAPIMVC\\ProyectoAPIMVC\\Program.cs",
+              "RelativeDocumentMoniker": "ProyectoAPIMVC\\Program.cs",
+              "ToolTip": "C:\\Users\\israa\\Desktop\\ProyectoAPIMVC\\ProyectoAPIMVC\\Program.cs",
+              "RelativeToolTip": "ProyectoAPIMVC\\Program.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAkwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T20:54:53.845Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\israa\\Desktop\\ProyectoAPIMVC\\ProyectoAPIMVC\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "ProyectoAPIMVC\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\israa\\Desktop\\ProyectoAPIMVC\\ProyectoAPIMVC\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "ProyectoAPIMVC\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA8wB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T15:00:27.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ProyectoApiContext.cs",
+              "DocumentMoniker": "C:\\Users\\israa\\Desktop\\ProyectoAPIMVC\\ProyectoAPIMVC\\Models\\ProyectoApiContext.cs",
+              "RelativeDocumentMoniker": "ProyectoAPIMVC\\Models\\ProyectoApiContext.cs",
+              "ToolTip": "C:\\Users\\israa\\Desktop\\ProyectoAPIMVC\\ProyectoAPIMVC\\Models\\ProyectoApiContext.cs",
+              "RelativeToolTip": "ProyectoAPIMVC\\Models\\ProyectoApiContext.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAuwFwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T20:46:40.43Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "register.html",
+              "DocumentMoniker": "C:\\Users\\israa\\Desktop\\ProyectoAPIMVC\\ProyectoAPIMVC\\wwwroot\\register.html",
+              "RelativeDocumentMoniker": "ProyectoAPIMVC\\wwwroot\\register.html",
+              "ToolTip": "C:\\Users\\israa\\Desktop\\ProyectoAPIMVC\\ProyectoAPIMVC\\wwwroot\\register.html",
+              "RelativeToolTip": "ProyectoAPIMVC\\wwwroot\\register.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-12-16T02:49:44.42Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "login.html",
+              "DocumentMoniker": "C:\\Users\\israa\\Desktop\\ProyectoAPIMVC\\ProyectoAPIMVC\\wwwroot\\login.html",
+              "RelativeDocumentMoniker": "ProyectoAPIMVC\\wwwroot\\login.html",
+              "ToolTip": "C:\\Users\\israa\\Desktop\\ProyectoAPIMVC\\ProyectoAPIMVC\\wwwroot\\login.html",
+              "RelativeToolTip": "ProyectoAPIMVC\\wwwroot\\login.html",
+              "ViewState": "AgIAAIkAAAAAAAAAAAAUwKMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-12-16T04:20:44.153Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "home.html",
+              "DocumentMoniker": "C:\\Users\\israa\\Desktop\\ProyectoAPIMVC\\ProyectoAPIMVC\\wwwroot\\home.html",
+              "RelativeDocumentMoniker": "ProyectoAPIMVC\\wwwroot\\home.html",
+              "ToolTip": "C:\\Users\\israa\\Desktop\\ProyectoAPIMVC\\ProyectoAPIMVC\\wwwroot\\home.html",
+              "RelativeToolTip": "ProyectoAPIMVC\\wwwroot\\home.html",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAUwGgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-12-16T02:42:35.482Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "pilotos.html",
+              "DocumentMoniker": "C:\\Users\\israa\\Desktop\\ProyectoAPIMVC\\ProyectoAPIMVC\\wwwroot\\pilotos.html",
+              "RelativeDocumentMoniker": "ProyectoAPIMVC\\wwwroot\\pilotos.html",
+              "ToolTip": "C:\\Users\\israa\\Desktop\\ProyectoAPIMVC\\ProyectoAPIMVC\\wwwroot\\pilotos.html",
+              "RelativeToolTip": "ProyectoAPIMVC\\wwwroot\\pilotos.html",
+              "ViewState": "AgIAACwAAAAAAAAAAAAUwEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-12-16T06:49:59.242Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "resultados.html",
+              "DocumentMoniker": "C:\\Users\\israa\\Desktop\\ProyectoAPIMVC\\ProyectoAPIMVC\\wwwroot\\resultados.html",
+              "RelativeDocumentMoniker": "ProyectoAPIMVC\\wwwroot\\resultados.html",
+              "ToolTip": "C:\\Users\\israa\\Desktop\\ProyectoAPIMVC\\ProyectoAPIMVC\\wwwroot\\resultados.html",
+              "RelativeToolTip": "ProyectoAPIMVC\\wwwroot\\resultados.html",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACMAAABsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-12-16T08:22:53.384Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "PilotosController.cs",
+              "DocumentMoniker": "C:\\Users\\israa\\Desktop\\ProyectoAPIMVC\\ProyectoAPIMVC\\Controllers\\PilotosController.cs",
+              "RelativeDocumentMoniker": "ProyectoAPIMVC\\Controllers\\PilotosController.cs",
+              "ToolTip": "C:\\Users\\israa\\Desktop\\ProyectoAPIMVC\\ProyectoAPIMVC\\Controllers\\PilotosController.cs",
+              "RelativeToolTip": "ProyectoAPIMVC\\Controllers\\PilotosController.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAgwEkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T19:44:16.278Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\israa\\Desktop\\ProyectoAPIMVC\\ProyectoAPIMVC\\appsettings.json",
+              "RelativeDocumentMoniker": "ProyectoAPIMVC\\appsettings.json",
+              "ToolTip": "C:\\Users\\israa\\Desktop\\ProyectoAPIMVC\\ProyectoAPIMVC\\appsettings.json",
+              "RelativeToolTip": "ProyectoAPIMVC\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-15T23:46:07.197Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

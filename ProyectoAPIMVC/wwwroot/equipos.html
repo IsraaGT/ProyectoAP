@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Equipos</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <!-- Botón de Volver -->
+    <button class="btn btn-primary volver-button" onclick="window.location.href='home.html'">Volver</button>
+
+    <div class="container mt-4">
+        <h1 class="text-center">Gestión de Equipos</h1>
+
+        <!-- Tabla de Equipos -->
+        <table class="table table-bordered table-striped mt-4" id="equiposTable">
+            <thead class="table-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>País</th>
+                    <th>Director</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <!-- Formulario para Agregar Equipo -->
+        <h2>Agregar Equipo</h2>
+        <form id="equipoForm" class="row g-3">
+            <div class="col-md-4">
+                <input type="text" id="nombreEquipo" class="form-control" placeholder="Nombre del Equipo" required>
+            </div>
+            <div class="col-md-4">
+                <input type="text" id="pais" class="form-control" placeholder="País" required>
+            </div>
+            <div class="col-md-4">
+                <input type="text" id="director" class="form-control" placeholder="Director" required>
+            </div>
+            <div class="col-md-12 text-center">
+                <button type="submit" class="btn btn-primary">Agregar</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Modal para Editar Equipo -->
+    <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editModalLabel">Editar Equipo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="editForm">
+                        <input type="hidden" id="editId">
+                        <div class="mb-3">
+                            <label for="editNombreEquipo" class="form-label">Nombre del Equipo</label>
+                            <input type="text" id="editNombreEquipo" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editPais" class="form-label">País</label>
+                            <input type="text" id="editPais" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editDirector" class="form-label">Director</label>
+                            <input type="text" id="editDirector" class="form-control" required>
+                        </div>
+                        <button type="submit" class="btn btn-success">Guardar Cambios</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const API_URL = "https://localhost:7014/api/Equipos";
+
+        // Obtener y mostrar equipos
+        async function fetchEquipos() {
+            try {
+                const response = await fetch(API_URL);
+                const equipos = await response.json();
+                const tbody = document.querySelector("#equiposTable tbody");
+                tbody.innerHTML = ""; // Limpiar tabla
+                equipos
+                    .filter(equipo => equipo.status) // Mostrar solo equipos con Status == true
+                    .forEach(equipo => {
+                        const row = document.createElement("tr");
+                        row.innerHTML = `
+                                        <td>${equipo.idequipo}</td>
+                                        <td>${equipo.nombreEquipo}</td>
+                                        <td>${equipo.país}</td>
+                                        <td>${equipo.director}</td>
+                                        <td>
+                                            <button class="btn btn-warning btn-sm" onclick="openEditModal(${equipo.idequipo}, '${equipo.nombreEquipo}', '${equipo.país}', '${equipo.director}')">Editar</button>
+                                            <button class="btn btn-danger btn-sm" onclick="deleteEquipo(${equipo.idequipo})">Eliminar</button>
+                                        </td>
+                                    `;
+                        tbody.appendChild(row);
+                    });
+            } catch (error) {
+                console.error("Error al obtener los equipos:", error);
+            }
+        }
+
+        // Agregar nuevo equipo
+        async function addEquipo(e) {
+            e.preventDefault();
+            const nuevoEquipo = {
+                nombreEquipo: document.getElementById("nombreEquipo").value,
+                país: document.getElementById("pais").value,
+                director: document.getElementById("director").value,
+                status: true // Establecer estado activo al agregar
+            };
+            try {
+                await fetch(API_URL, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(nuevoEquipo)
+                });
+                fetchEquipos();
+                document.getElementById("equipoForm").reset();
+            } catch (error) {
+                console.error("Error al agregar el equipo:", error);
+            }
+        }
+
+        // Abrir modal para editar equipo
+        function openEditModal(id, nombreEquipo, pais, director) {
+            document.getElementById("editId").value = id;
+            document.getElementById("editNombreEquipo").value = nombreEquipo;
+            document.getElementById("editPais").value = pais;
+            document.getElementById("editDirector").value = director;
+            new bootstrap.Modal(document.getElementById("editModal")).show();
+        }
+
+        // Guardar cambios al editar equipo
+        async function editEquipo(e) {
+            e.preventDefault();
+            const id = document.getElementById("editId").value;
+            const equipoActualizado = {
+                idequipo: id,
+                nombreEquipo: document.getElementById("editNombreEquipo").value,
+                país: document.getElementById("editPais").value,
+                director: document.getElementById("editDirector").value,
+                status: true 
+            };
+            try {
+                await fetch(`${API_URL}/${id}`, {
+                    method: "PUT",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(equipoActualizado)
+                });
+                fetchEquipos();
+                bootstrap.Modal.getInstance(document.getElementById("editModal")).hide();
+            } catch (error) {
+                console.error("Error al editar el equipo:", error);
+            }
+        }
+
+        // Eliminar equipo
+        async function deleteEquipo(id) {
+            try {
+                await fetch(`${API_URL}/${id}`, {
+                    method: "DELETE" 
+                });
+                fetchEquipos(); 
+            } catch (error) {
+                console.error("Error al eliminar el equipo:", error);
+            }
+        }
+
+        // Inicializar eventos
+        document.getElementById("equipoForm").addEventListener("submit", addEquipo);
+        document.getElementById("editForm").addEventListener("submit", editEquipo);
+        fetchEquipos();
+    </script>
+</body>
+
+</html>

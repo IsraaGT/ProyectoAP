@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuarios</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            font-size: 14px;
+            color: #555;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background-color: #218838;
+            }
+
+        .error, .success {
+            margin-top: 10px;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .error {
+            color: #dc3545;
+        }
+
+        .success {
+            color: #28a745;
+        }
+
+        .login-link {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+            .login-link a {
+                color: #007bff;
+                text-decoration: none;
+                font-size: 14px;
+            }
+
+                .login-link a:hover {
+                    text-decoration: underline;
+                }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Registro</h1>
+        <form id="registerForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo" placeholder="Ingresa tu correo" required>
+
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" id="contraseña" name="contraseña" placeholder="Ingresa tu contraseña" required>
+
+            <button type="button" id="btnRegister">Registrarse</button>
+            <div class="error" id="errorMsg"></div>
+            <div class="success" id="successMsg"></div>
+        </form>
+
+        <!-- Enlace para redirigir al login -->
+        <div class="login-link">
+            <p>¿Ya tienes cuenta? <a href="login.html">Inicia sesión aquí</a></p>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("#btnRegister").click(function () {
+                // Limpiar mensajes previos
+                $("#errorMsg").text('');
+                $("#successMsg").text('');
+
+                // Obtener los datos del formulario
+                const nombre = $("#nombre").val().trim();
+                const correo = $("#correo").val().trim();
+                const contraseña = $("#contraseña").val().trim();
+
+                // Validaciones básicas
+                if (!nombre || !correo || !contraseña) {
+                    $("#errorMsg").text("Todos los campos son obligatorios.");
+                    return;
+                }
+
+                if (!/\S+@\S+\.\S+/.test(correo)) {
+                    $("#errorMsg").text("Por favor, ingresa un correo válido.");
+                    return;
+                }
+
+                if (contraseña.length < 6) {
+                    $("#errorMsg").text("La contraseña debe tener al menos 6 caracteres.");
+                    return;
+                }
+
+                // Construir el objeto de datos con el valor de rol predeterminado como 2
+                const userData = {
+                    NombreUsuario: nombre,
+                    Correo: correo,
+                    Contraseña: contraseña,
+                    Rol: 2 // Asignar el rol 2 como valor predeterminado
+                };
+
+                // Enviar los datos al backend usando AJAX
+                $.ajax({
+                    url: "https://localhost:7014/api/usuarios", // Cambia a tu ruta de API real
+                    type: "POST",
+                    contentType: "application/json",
+                    data: JSON.stringify(userData),
+                    success: function (response) {
+                        $("#successMsg").text("¡Usuario registrado exitosamente!");
+                        $("#registerForm")[0].reset(); // Limpiar el formulario
+                    },
+                    error: function (xhr) {
+                        let errorText = "Ocurrió un error al registrar el usuario.";
+                        if (xhr.responseJSON && xhr.responseJSON.errors) {
+                            errorText = Object.values(xhr.responseJSON.errors).join(" ");
+                        }
+                        $("#errorMsg").text(errorText);
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
